@@ -1,0 +1,12 @@
+1. In the Line class, one can access and manipulate data by a variety of created methods. These inlude 'join',
+'leave', 'front', 'middle', 'back', 'seach', and 'index', with all of them being self-referencial in the context
+of a waiting line. In the Screen class, one can user 'insert', and 'at' which insert and locate the needed pixel
+respectively.
+2. In the Line class, a conveniently names 'search' method can be utilized. All one needs to do is pass a persons
+name into it. As for the Screen class, there is a method 'at', which is used to track the pixel at the given
+location with only the location itself in (length, width) format needed for proper execution.
+3. In the grand scheme of things, these two data structures are fairly universal in application to similar tasks.
+'line' can be replaced by an order of giant ice cream with unique flavors stacked one upon another, and many other
+applications.The 'screen' class can be substituted with any other application of inserting things and searching 
+into a pre-defined 2-D space and values in a cartesian coordinat system, and can even be flatten to a 1-D space 
+or expanded to a 3-D space with slight modifications.

@@ -1,0 +1,20 @@
+Resolutions -
+1. Double Hashing - Creating a second hash function that is it to be used to find the increment value in the 
+increment value of the element. So say our primary hash function returns an array position of 1 with the given key. 
+Then let's assume a collision ocurred. With double hashing, the key will be taken through the second hash function,
+which needs to be unique, and it's result will determine the new position. If another collision occurs, the same 
+increment will be administered until an empty spot is found.
+
+2. Quadratic Probing - on a collision given a probe, try probing i^2 spaces away. So if the first probe wasn't 
+successful, the second probe will be done i^2, or 4 spaces away in the array.
+
+3. Cryptographic hashing - A hash function returns a fixed-size alphanumeric string. In essence, the key is 
+converted into a digest of the same length for each value, but the the way the digest is computed needs to 
+create completely different digests. In other words, even similar values should have drastically different digests
+so that the hashing function and amy patters cannot be easily determined.
+
+
+My resolution -
+
+Use quadratic probing, but add the value of the current index of the array. If this approach hits the same value a 
+second time, use a second hashing function to calculate another increment minus the value of the current array.

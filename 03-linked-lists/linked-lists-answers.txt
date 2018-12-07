@@ -1,0 +1,8 @@
+1. Spacial locality refers to a practice of accessing pieces of data that are in close spacial proximity of each other,
+and does not reference the values that have already been read. This is an advantageous practive when the data evaluated
+is clustered together, and therefore there is no need to jump all around the memory, and the processes of looking something
+up are performe linearly.
+2. All the snapshots are attached with the results. When it comes to creating, arrays far exceed the linked list, but
+when it comes to looking up, they are surprisingly close in performance. And likewise, when it comes to removing elements,
+although the linked list is slightly outclassed when it comes to the search, the process after deletion greatly
+outperforms a regular array, considering that an array has to shift all of the subsequent values.

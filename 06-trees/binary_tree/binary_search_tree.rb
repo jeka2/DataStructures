@@ -78,12 +78,14 @@ end
     elsif node.left 
       replacement = find_rightmost(node.left)
     end
-    replacement.left = node.left ? node.left : nil
-    replacement.right = node.right ? node.right : nil
-    if node.rating > parent.rating
-      parent.right = replacement
-    else
-      parent.left = replacement
+    if replacement
+      replacement.left = node.left ? node.left : nil
+      replacement.right = node.right ? node.right : nil
+      if node.rating > parent.rating
+        parent.right = replacement
+      else
+        parent.left = replacement
+      end
     end
   end
 

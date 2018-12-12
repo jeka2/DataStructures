@@ -8,6 +8,5 @@ class Node
   def initialize(title, rating)
   	@title = title
   	@rating = rating
-  	self.visited = false
   end
 end

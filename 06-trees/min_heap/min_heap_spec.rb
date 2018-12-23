@@ -19,9 +19,9 @@ RSpec.describe MinHeap, type: Class do
   let (:mad_max_2) { Node.new("Mad Max 2: The Road Warrior", 98) }
   
   describe "#insert(data)" do 
-    it "properly inserts a new node as a left child" do
+    it "properly switches the node with the parent if the node's rating is smaller" do
       tree.insert(root, pacific_rim)
-      expect(root.left.title).to eq "Pacific Rim"
+      expect(new_root.left.title).to eq "The Matrix"
     end
   end
 
